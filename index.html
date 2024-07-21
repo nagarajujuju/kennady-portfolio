@@ -1,0 +1,329 @@
+<html>
+
+<head>
+
+<title>Rajeeve george kennady - Personal Website</title>
+
+<style>
+
+body {
+
+font-family: Arial, sans-serif;
+
+line-height: 1.6;
+
+margin: 0;
+
+padding: 0;
+
+background-color: #f0f0f0;
+
+}
+
+.container {
+
+width: 80%;
+
+margin: auto;
+
+overflow: hidden;
+
+padding: 20px;
+
+}
+
+header {
+
+background: #a40b88;
+
+color: #fff;
+
+padding: 10px 0;
+
+text-align: center;
+
+}
+
+header h1 {
+
+margin: 0;
+
+}
+
+nav {
+
+loat: left;
+
+width: 100%;
+
+background: #0b79c3;
+
+overflow: hidden;
+
+}
+
+nav ul {
+
+padding: 0;
+
+list-style-type: none;
+
+}
+
+nav ul li {
+
+display: inline;
+
+margin-right: 20px;
+
+}
+
+nav a {
+
+color: #e60505;
+
+text-decoration: none;
+
+font-size: 18px;
+
+}
+
+.content {
+
+display: none; 
+
+background: #68d7ff;
+
+padding: 20px;
+
+overflow: hidden;
+
+}
+
+.content.active {
+
+display: block; 
+
+}
+
+.form-group {
+
+margin-bottom: 20px;
+
+}
+
+.form-group label {
+
+display: block;
+
+font-weight: bold;
+
+margin-bottom: 5px;
+
+}
+
+.form-group input[type="text"],
+
+.form-group input[type="number"] {
+
+width: calc(100% - 12px);
+
+padding: 8px;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+}
+
+.form-group input[type="submit"] {
+
+background-color: #4CAF50;
+
+color: white;
+
+padding: 10px 20px;
+
+border: none;
+
+border-radius: 4px;
+
+cursor: pointer;
+
+float: right;
+
+}
+
+.form-group input[type="submit"]:hover {
+
+background-color: #45a049;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<h1>Rajeeve george kennady S</h1>
+
+<p>Welcome to my personal website</p>
+
+</div>
+
+</header>
+
+<nav>
+
+<div class="container">
+
+<ul>
+
+<li><a href="#" onclick="showSection('home')">Home</a></li>
+
+<li><a href="#" onclick="showSection('personal-details')">Personal Details</a></li>
+
+<li><a href="#" onclick="showSection('professional-details')">Professional Details</a></li>
+
+<li><a href="#" onclick="showSection('job-description')">Job Description & Skills</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<div id="home" class="content active">
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<p>I am Kennedy, currently in my final year of undergraduate studies in Computer Science at St. Joseph's College (Autonomous) in Trichy-02.</p>
+
+<img src="./kennady.jpg" width="200", height="200">
+
+</div>
+
+</div>
+
+<div id="personal-details" class="content">
+
+<div class="container">
+
+<h2>Personal Details</h2>
+
+
+<p>Name :Rajeeve george kennady s</p>
+
+<p>D.No : 22UCS127</p>
+
+<p>DOB :29/10/2004</p>
+
+<p>Blood group: A1+ve</p>
+
+<p>Address: 23,viralimalai,pudukkottai-621 316</p>
+
+<p>Schooling : St.Patrick's Hr.Sec.School,Alundur</p>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRC2N6SWZcEAXmaGDzR_PWxhIPm7WoaCW8IQ&s">
+
+<p>College:St.Joseph's college(Autonomous)</p>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQosFsCuW5XRAgpeu7JXwUxOd1HHwAwbaaMgw&s">
+
+</form>
+
+
+<script>
+
+</script>
+
+</div>
+
+</div>
+
+<div id="professional-details" class="content">
+
+<div class="container">
+
+<h2>Professional Details</h2>
+
+<p>Degree :B.Sc.,Computer Science</p>
+
+<p>Institution:St.Joseph's college(Autonomous)</p>
+
+<img src="https://www.sjctni.edu/img/slider/10112022/4.jpg"width=600, height=300>
+
+<p>Duration:2022-2025 </p>
+
+<p>Core Courses: Data structure and algorithms using java,(NPTEL course)</p>
+
+<p>Internships: Web devolepment and data entry</p> 
+
+<p>Internship companys: Fantasy solution and Aavin bmc</p>
+
+<h3>Company logo</h3>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lpKMYMXvgN_voUMbpcaQIXw58f1Pg8ja3w&s" width="400", height="250">
+
+</div>
+
+</div>
+
+<div id="job-description" class="content">
+
+<div class="container">
+
+<h2>Job Description & Skills</h2>
+
+<p>Job Description: Intrested job as a web devoleper and bank employee</p>
+
+<h3>Skills:</h3>
+
+<p>MS Excel,Word</p>
+
+<p>Basic of C Programming </p>
+
+<p>Basic of C++ Programming</p>
+
+<p>Database</p>
+
+<p>Python</p>
+
+<p>Java</p>
+
+</div>
+
+</div>
+
+<script>
+
+function showSection(sectionId) {
+
+var sections = document.querySelectorAll('.content');
+
+sections.forEach(function(section) {
+
+section.classList.remove('active');
+
+});
+
+var selectedSection = document.getElementById(sectionId);
+
+selectedSection.classList.add('active');
+
+return false;
+
+}
+
+</script>
+
+</body>
+
+</html>
